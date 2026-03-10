@@ -39,6 +39,3 @@ jobs:
 
             # Migrate database
             ./vendor/bin/sail artisan migrate
-
-            # Ensure storage is linked
-            ./vendor/bin/sail artisan storage:link

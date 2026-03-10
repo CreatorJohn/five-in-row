@@ -41,14 +41,12 @@ const MenuButton: React.FC<MenuButtonProps> = ({
             <div
                 className={`p-2.5 sm:p-3 rounded-xl sm:rounded-2xl transition-colors duration-300 ${variant === "action" ? "bg-white/20" : "bg-slate-900/50 group-hover:bg-slate-900"}`}
             >
-                <Icon
-                    size={20}
-                    className="sm:w-6 sm:h-6"
-                    strokeWidth={2.5}
-                />
+                <Icon size={20} className="sm:w-6 sm:h-6" strokeWidth={2.5} />
             </div>
             <div className="flex flex-col items-start text-left">
-                <span className="text-sm sm:text-base tracking-tight">{label}</span>
+                <span className="text-sm sm:text-base tracking-tight">
+                    {label}
+                </span>
                 {subtitle && (
                     <span className="text-[9px] sm:text-[10px] font-medium opacity-50 uppercase tracking-widest">
                         {subtitle}
@@ -95,7 +93,9 @@ export const GuestMenu: React.FC<GuestMenuProps> = ({ onNavigate }) => {
                         title="Login"
                     >
                         <LogIn size={18} />
-                        <span className="sm:hidden text-[10px] font-black uppercase">Login</span>
+                        <span className="sm:hidden text-[10px] font-black uppercase">
+                            Login
+                        </span>
                     </button>
                     <button
                         onClick={() => (window.location.href = "/register")}
@@ -103,7 +103,9 @@ export const GuestMenu: React.FC<GuestMenuProps> = ({ onNavigate }) => {
                         title="Register"
                     >
                         <UserPlus size={18} />
-                        <span className="sm:hidden text-[10px] font-black uppercase">Join</span>
+                        <span className="sm:hidden text-[10px] font-black uppercase">
+                            Join
+                        </span>
                     </button>
                 </div>
             </div>
@@ -136,12 +138,6 @@ export const GuestMenu: React.FC<GuestMenuProps> = ({ onNavigate }) => {
                     <span className="text-emerald-400 font-bold"> Friends</span>
                     .
                 </p>
-                <button 
-                    onClick={() => window.location.href = '/register'}
-                    className="mt-5 sm:mt-6 w-full py-3.5 sm:py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-xl sm:rounded-2xl font-bold transition-all border border-slate-700 cursor-pointer active:scale-95 relative z-10"
-                >
-                    Create Your Profile
-                </button>
             </div>
         </div>
     );

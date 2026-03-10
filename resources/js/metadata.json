@@ -1,0 +1,5 @@
+{
+  "name": "Five in a Row",
+  "description": "A dynamic strategy board game where the grid expands as you play. Connect five symbols to win!",
+  "requestFramePermissions": []
+}

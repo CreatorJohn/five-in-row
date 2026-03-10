@@ -36,6 +36,3 @@ jobs:
             ./vendor/bin/sail artisan config:cache
             ./vendor/bin/sail artisan route:cache
             ./vendor/bin/sail artisan view:cache
-
-            # Migrate database
-            ./vendor/bin/sail artisan migrate
